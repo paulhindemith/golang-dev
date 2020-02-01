@@ -11,6 +11,7 @@ ENV PATH $PATH:/root/go/bin
 RUN echo 'export PS1="\$ "' >> /root/.bashrc \
 && echo 'export TEST_ENV="local"' >> /root/.bashrc
 
+
 WORKDIR /go/src/github.com/paulhindemith
 
 CMD ["/bin/bash"]
